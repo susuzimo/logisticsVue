@@ -10,6 +10,7 @@ import {putRequest} from "./utils/api";
 import {deleteRequest} from "./utils/api";
 import {getRequest} from "./utils/api";
 import {uploadFileRequest} from "./utils/api";
+import {postKeyValueRequest} from "./utils/api";
 
 
 Vue.config.productionTip = false
@@ -19,8 +20,9 @@ Vue.prototype.putRequest=putRequest;
 Vue.prototype.deleteRequest=deleteRequest;
 Vue.prototype.getRequest=getRequest;
 Vue.prototype.uploadFileRequest=uploadFileRequest;
+Vue.prototype.postKeyValueRequest=postKeyValueRequest;
 
-Vue.use(ElementUI);
+Vue.use(ElementUI,{size:'small'});
 /* eslint-disable no-new */
 //当页面跳转时，会触发该方法
 //to 去哪儿
